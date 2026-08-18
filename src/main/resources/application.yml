@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://ep-patient-fire-azbdyn8b-pooler.c-3.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+    username: neondb_owner
+    password: npg_trpqBVW3b4fo
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none #always keep none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  servlet:
+    context-path: /irctc
+  port: 8080
